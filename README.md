@@ -10,7 +10,7 @@ https://huggingface.co 注册账号，新建space，名称随意，选择docker�
 # 节点配置如下
 ![image](https://github.com/eoovve/Huggingface-ws/assets/142894633/b97638ec-1f71-4859-89fd-1a21744e49ca)
 
-可以利用cf的cdn来配合优选ip使用，反代代码如下，替换第6行中的地址。
+可以利用cf的workers套cdn加速配合优选ip或优选域名使用，反代代码如下，替换第6行中的地址。
 ```
 export default {
     async fetch(request, env) {
