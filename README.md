@@ -4,8 +4,11 @@
 25bef25c-cbe4-431b-93b6-b39aa11c0a7e
 ```
 # 部署
-https://huggingface.co 注册账号，新建space，名称随意，选择docker，上传文件，除了README.md，其他文件都上传。
-修改start.sh里的哪吒参数，不需要哪吒可忽略，自动部署 
+https://huggingface.co 注册账号，新建space，名称随意，选择docker，空白项目，选择public公开项目，上传文件，除了README.md，其他文件都上传。
+修改start.sh里的哪吒参数，不需要哪吒可忽略，自动部署。
+
+# 获取域名
+域名形式：用户名-项目名.hf.space,例如我的用户名为aaa,项目名为bbb,那么域名为：aaa-bbb.hf.space。或者通过下图直接查看域名
 ![image](https://github.com/eoovve/Huggingface-ws/assets/142894633/3a8c246a-df46-4e3c-848a-f8730ac58766)
 
 # 节点配置如下
