@@ -10,3 +10,25 @@ https://huggingface.co 注册账号，新建space，名称随意，选择docker�
 # 节点配置如下
 ![image](https://github.com/eoovve/Huggingface-ws/assets/142894633/b97638ec-1f71-4859-89fd-1a21744e49ca)
 
+可以利用cf的cdn来配合优选ip使用，反代代码如下，替换第6行中的地址。
+```
+export default {
+    async fetch(request, env) {
+        let url = new URL(request.url);
+        if (url.pathname.startsWith('/')) {
+            var arrStr = [
+                'aaaa.bbbbb.hf.space',
+            ];
+            url.protocol = 'https:'
+            url.hostname = getRandomArray(arrStr)
+            let new_request = new Request(url, request);
+            return fetch(new_request);
+        }
+        return env.ASSETS.fetch(request);
+    },
+};
+function getRandomArray(array) {
+  const randomIndex = Math.floor(Math.random() * array.length);
+  return array[randomIndex];
+}
+```
