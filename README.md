@@ -7,3 +7,6 @@ https://huggingface.co 注册账号，新建space，名称随意，选择docker�
 修改start.sh里的哪吒参数，不需要哪吒可忽略，自动部署 
 ![image](https://github.com/eoovve/Huggingface-ws/assets/142894633/3a8c246a-df46-4e3c-848a-f8730ac58766)
 
+# 节点配置如下
+![image](https://github.com/eoovve/Huggingface-ws/assets/142894633/b97638ec-1f71-4859-89fd-1a21744e49ca)
+
